@@ -79,7 +79,7 @@
                                            AFStringFromNetworkReachabilityStatus(status));
                                  XCTAssertEqual(reachable, manager.isReachable, @"Expected status to match 'isReachable'");
 
-                                 return YES;
+                                 return reachable;
                              }];
 
     [manager startMonitoring];
